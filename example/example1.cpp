@@ -1,6 +1,6 @@
 #include <iostream>
 #include <set>
-#include "bstree.h"
+#include "bstree.hpp"
 
 using namespace std;
 using namespace BSTree;
