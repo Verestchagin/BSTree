@@ -15,11 +15,11 @@ bool Tree::insert(int value) {
 	Node* current = head;
 	Node* previous = head;
 	while (current != nullptr) {
-		if (current -> data > value) {
-			current = current -> left;
+		if (current->data > value) {
+			current = current->left;
 		}
-		else if (current -> data < value){
-			current = current -> right;
+		else if (current->data < value){
+			current = current->right;
 		}
 		else {
 			return false;
@@ -29,23 +29,22 @@ bool Tree::insert(int value) {
 		}
 	}
 
-	if (previous -> data > value) {
-		previous -> left = new Node{value, nullptr, nullptr};
+	if (previous->data > value) {
+		previous->left = new Node{value, nullptr, nullptr};
 	}
 	else {
-		previous -> right = new Node{value, nullptr, nullptr};
+		previous->right = new Node{value, nullptr, nullptr};
 	}
 	return true;
 }
 
 void Tree::remove(Node*& node){
 	if (node == nullptr) return;
-	if (node -> left != nullptr) remove(node -> left);
-	if (node -> right != nullptr) remove(node -> right);
+	if (node->left != nullptr) remove(node->left);
+	if (node->right != nullptr) remove(node->right);
 	delete node;
 	node = nullptr;
 }
 Tree::~Tree(){
 	remove(head);
 }
-	
