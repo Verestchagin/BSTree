@@ -16,5 +16,3 @@ bool Tree::input(int value){
 	if (previous -> data > value) parent -> left = new Node{value, nullptr, nullptr};
 	else parent -> right = new Node{value, nullptr, nullptr};
 }
-
-Tree::~Tree() { ; }
