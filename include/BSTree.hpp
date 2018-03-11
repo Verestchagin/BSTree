@@ -1,5 +1,4 @@
 namespace BSTree{
-	
 	struct Node{
 		int data;
 		Node* left;
