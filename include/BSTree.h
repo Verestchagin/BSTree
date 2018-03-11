@@ -1,4 +1,5 @@
 namespace BSTree{
+	
 	struct Node{
 		int data;
 		Node* left;
@@ -7,9 +8,10 @@ namespace BSTree{
 	
 	class Tree{
 		Node* head;
+		void remove(Node*& node);
 	    public:
 		Tree();
-		bool input(int value);
+		bool insert(int value);
 		~Tree();
 	};
 }	
