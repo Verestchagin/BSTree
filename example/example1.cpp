@@ -96,7 +96,7 @@ int main(int argc, char* argv[]) {
 				cout<<tree<<endl;
 				break;
 			case 2:
-				cout<<"e"<<endl;
+				cout<<"enter bypass"<<endl;
 				show_list_of_tree(tree);
 				break;
 			case 3:
